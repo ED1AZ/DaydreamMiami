@@ -10,11 +10,11 @@ init python:
 
 screen stat_box():
     frame:
-        xalign 0.1 # Aligns the box to the right side of the screen
-        yalign 0.1 # Aligns the box to the top of the screen
+        xalign 0.1 
+        yalign 0.1 
         
 
-        vbox: # Arranges elements vertically within the frame
+        vbox:
             text "Stats:"
             text "Health: [personal_health]"
             text "Sanity: [sanity]"
