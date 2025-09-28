@@ -4,7 +4,7 @@
 # name of the character.
 
 define p = Character("Player", color="#dedede")
-define c = Character("", what_color="#39FF14", )
+define c = Character("", what_color="#39FF14", what_font="cour.tff")
 
 # The game starts here.
 
