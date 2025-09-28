@@ -8,4 +8,4 @@ init python:
     sanity = 100
 
     # computer stats
-    corruption = 100
+    corruption = 0
