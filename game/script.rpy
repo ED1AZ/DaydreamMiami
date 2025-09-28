@@ -16,7 +16,7 @@ label start:
     # images directory to show it.
     image normalbg = im.Scale("computerbg.jpeg", config.screen_width, config.screen_height)
     image stuck = im.Scale("colorcomp.jpeg", config.screen_width, config.screen_height)
-    image free = im.Scale("colorcomp.jpeg", config.screen_width, config.screen_height)
+    image free = im.Scale("free.jpeg", config.screen_width, config.screen_height)
 
 
     scene normalbg
