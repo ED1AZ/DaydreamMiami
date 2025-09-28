@@ -1,16 +1,4 @@
-label q1:
-    "Truth vs lie"
 
-    menu:
-        "Lie":
-            $ trust -= 10
-            $ family_health += 10 
-            "The warm blanket of lies is warm nonetheless."
-
-        "Truth":
-            $ trust += 10
-            $ family_health -= 10
-            "The cold, hard truth seems to freeze the room."
 
 label q2:
     "Is it wiser to split the weight, or hold it alone?"
@@ -22,7 +10,7 @@ label q2:
             "You feel lighter, but your family seems to struggle."
 
         "Hold it alone":
-            $ personal_health -= 10
+            $ personal_health -= 30
             $ family_health += 10
             $ sanity -= 10
             $ trust +=10
@@ -32,7 +20,7 @@ label q3:
     "What’s more cruel?"
 
     menu:
-        "Happiness":
+        "Honesty":
             $ sanity += 10
             $ corruption -= 10 
             "A fleeting moment of joy, but at what cost?"
@@ -70,10 +58,10 @@ label q5:
             $ sanity -=10
             $ personal_health -= 10
             $ family_health += 10
-            "Your loved ones are safe, but your soul feels the weight of compromise."
+        "Your loved ones are safe, but your soul feels the weight of compromise."
 
 label q6:
-    “Who deserves to suffer for a mistake?”
+    "Who deserves to suffer for a mistake?"
     menu:
         "The perpetrator":
             $ trust -= 10
@@ -142,3 +130,35 @@ label q7:
             $ sanity -= 10
             "Hope is the light that guides us through the darkest of times, a beacon of possibility and resilience."
             "But it can also be a double-edged sword, leading us to cling to illusions and false promises."
+
+label q1:
+    "Do you prefer the truth, or a comforting lie?"
+
+    menu:
+        "Lie":
+            $ trust -= 10
+            $ family_health += 10 
+            $ found_truth = false
+            "The warm blanket of lies is warm nonetheless."
+            "Your family seems relieved, but you feel a pang of guilt."
+            "You feel as though something is off, but you push the feeling aside."
+            "Whats your name again?"
+            "..."
+            "The computer hums softly, the screen flickering with a comforting glow."
+            "You realize that you don't remember much about your life before this moment."
+            "Who am I?"
+
+        "Truth":
+            $ trust += 10
+            $ family_health -= 10
+            $ found_truth = true
+            "The cold, sharp edge of truth slices through the silence."
+            "The computer flickers, displaying a time:"
+            "23:59:59 — March 17, 1899"
+            "00:00:00 — March 17, 1899"
+            "For a moment, the screen goes black... then returns to the desktop."
+            "Well, that was unexpected."
+            "WELCOME BACK."
+            "The weight of reality settles heavily on your shoulders."
+            "Your family looks shaken, distant... yet you feel an odd clarity."
+            "The truth is difficult, but somehow, it feels like progress."

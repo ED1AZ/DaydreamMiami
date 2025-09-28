@@ -9,3 +9,7 @@ init python:
 
     # computer stats
     corruption = 0
+
+    #ending stats
+    found_truth = false
+    
